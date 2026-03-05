@@ -15,3 +15,9 @@ print (5**2)
 print (5//2)
 print (5%2)
 print (5==(2.5*2))
+
+#ordem de precedencia: 
+# 1. expressão dentro do ()
+# 2. potenciacão 
+# 3. multiplicação e divisão
+# 4. soma e subtração
