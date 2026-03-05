@@ -1,7 +1,7 @@
 print("hello world")
 import this
 print(7+4)
-print('7'+'4')
+print('14'+'57')
 nome=input ('qual é o seu nome')
 idade=input ('qual é a sua idade')
 peso=input ('qual é seu peso')
