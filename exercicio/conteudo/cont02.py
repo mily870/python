@@ -21,3 +21,13 @@ print (5==(2.5*2))
 # 2. potenciacão 
 # 3. multiplicação e divisão
 # 4. soma e subtração
+
+print (5+3*2)
+print (3*5+4**2)
+print (3*(5+4)**2)
+
+#pow (x,y)
+
+print (pow(3,4)) #potenciação 
+print (27**(1/3))
+print ('='*5)
