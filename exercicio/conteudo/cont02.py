@@ -29,5 +29,5 @@ print (3*(5+4)**2)
 #pow (x,y)
 
 print (pow(3,4)) #potenciação 
-print (27**(1/3))
+print (27**(1/2))
 print ('='*5)
