@@ -11,3 +11,13 @@ print (frase.count('t',3,46)) #caracter especifico dentro de um intervalo especi
 print (frase.find('curso')) #o find mostra a partir de qual indice aparece a pesquisa
 print (frase.find ('android')) #o resultado -1 indica que não tem essa sequencia na variavel
 print ('android'in frase) # o in verifica se aquele conjunto de string esta na variavel
+print (frase.replace('curso','t.i')) #troca a palavra
+print (frase.upper()) #deixa em maiuscula
+print (frase.lower()) #deixa em minusculo
+print (frase.capitalize()) #deixa a primeira letra da primeira palavra em maiusculo
+print (frase.title()) #deixa todas as letras em maiusculo
+print (frase.strip()) #tira o espaço em brando do inicio e do final
+print (frase.rstrip()) #tira o espaço do lado direito
+print (frase.lstrip()) #tira o espaço do lado esquerdo
+print (frase.split()) #transformar o valor da variavel em lista
+print ('*'.join(frase)) #une um simbolo em cada parte do split
