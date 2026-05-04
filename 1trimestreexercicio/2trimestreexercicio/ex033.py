@@ -1,10 +1,8 @@
-velocidade = float(input("qual a distancia da sua viagem em km? "))
-passagem = 80
-if velocidade > limite:
-    km_excedidos = velocidade - limite
-    multa = km_excedidos * 7
-    print("MULTADO! Você excedeu o limite de {}km/h.".format(limite))
-    print("Velocidade registrada: {}km/h".format(velocidade))
-    print("Valor da multa: R${:.2f}".format(multa))
+viagem = float(input("Qual é a distância da sua viagem?"))
+curta = 0.5 * viagem
+longa = 0.45 * viagem
+print("Você está prestes a começar uma viagem de {}Km".format(viagem))
+if viagem <=200:
+  print("E o preço da sua passagem será de R${}".format(curta))
 else:
-    print("Velocidade dentro do limite. Dirija com segurança!")
+  print("E o preço da sua passagem será de R${:.2f}".format(longa))
