@@ -1,8 +1,5 @@
 from time import sleep
-
-# Contagem regressiva de 10 até 0
-for cont in range(10, -1, -1):
-    print(cont)
-    sleep(1) # Pausa de 1 segundo
-
-print('BUM! BUM! POOOW! 🎆')
+for c in range(10, -1, -1):
+    print(c)
+    sleep(1)
+print('BUM! BUM! POOOW!')
