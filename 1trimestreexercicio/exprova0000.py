@@ -32,12 +32,54 @@
 #else:
     #print("a letra 'E' não aparece na frase")
 
-import random
-numero_computador = random.randint(0, 9)
-tentativa = int(input("digite um numero entre 0 a 9"))
-if tentativa == numero_computador:
-    print(f"acertou, o número era {numero_computador}.")
-    print("computador perdeu")
+# import random
+# numero_computador = random.randint(0, 9)
+# tentativa = int(input("digite um numero entre 0 a 9"))
+# if tentativa == numero_computador:
+#     print(f"acertou, o número era {numero_computador}.")
+#     print("computador perdeu")
+# else:
+#     print(f"errou, eu tinha pensado no número {numero_computador}.")
+#     print("computador ganhou")
+
+# Inicializa a lista vazia para guardar os dados das pessoas
+ 
+
+# dados = []
+# for i in range(1, 5): 
+#     print(f"Dados da Pessoa {i}") 
+#     altura = float(input("digite a altura: ")) 
+#     idade = int(input("digite a idade: ")) 
+#     pessoa = { 
+#         "altura": altura, 
+#         "idade": idade 
+#     } 
+#     dados.append(pessoa) 
+# print() 
+# print("Lista de pessoas armazenadas:") 
+# print(dados)
+
+# lista = []
+# lista.append("arroz")
+# lista.append("feijão")
+# lista.append("leite")
+# lista.append("pão")
+# lista.append("café")
+# print(lista)
+
+
+texto = "[[prog]ram]a"
+pontos = 0
+erro = 'false'
+for letra in texto:
+    if letra == '[':
+        pontos = pontos + 1
+    elif letra == ']':
+        pontos = pontos - 1
+    if pontos < 0:
+        deu_erro = True
+        break
+    if pontos == 0 and erro == 'false':
+       print("true")  
 else:
-    print(f"errou, eu tinha pensado no número {numero_computador}.")
-    print("computador ganhou")
+       print("false")
