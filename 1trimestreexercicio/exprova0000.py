@@ -68,18 +68,18 @@
 # print(lista)
 
 
-texto = "[[prog]ram]a"
-pontos = 0
-erro = 'false'
-for letra in texto:
-    if letra == '[':
-        pontos = pontos + 1
-    elif letra == ']':
-        pontos = pontos - 1
-    if pontos < 0:
-        deu_erro = True
-        break
-    if pontos == 0 and erro == 'false':
-       print("true")  
-else:
-       print("false")
+# texto = "[[prog]ram]a"
+# pontos = 0
+# erro = 'false'
+# for letra in texto:
+#     if letra == '[':
+#         pontos = pontos + 1
+#     elif letra == ']':
+#         pontos = pontos - 1
+#     if pontos < 0:
+#         deu_erro = True
+#         break
+#     if pontos == 0 and erro == 'false':
+#        print("true")  
+# else:
+#        print("false")
