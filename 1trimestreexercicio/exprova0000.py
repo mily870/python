@@ -83,3 +83,42 @@
 #        print("true")  
 # else:
 #        print("false")
+
+
+clube = {}
+clube['nome'] = input("Digite o nome do clube: ")
+clube['ano_fundacao'] = int(input("Digite o ano de fundação: "))
+clube['titulos'] = int(input("Digite a quantidade de títulos ganhos: "))
+ano_centenario = clube['ano_fundacao'] + 100
+print("informações do clube")
+print(f"Nome: {clube['nome']}")
+print(f"ano de fundação: {clube['ano_fundacao']}")
+print(f"quantidade de títulos: {clube['titulos']}")
+print(f"o {clube['nome']} completará 100 anos em: {ano_centenario}")
+
+
+jogadores = {}
+for i in range(1, 7):
+    nome = input(f"digite o nome do jogador {i}: ")
+    resultado = float(input(f"digite o resultado do jogador {i}: "))
+    jogadores[nome] = resultado
+print("resultado armazenados")
+print(jogadores)
+ranking_decrescente = sorted(jogadores.items(), key=lambda item: item[1], reverse=True)
+print("ordem decrescente (maior para o menor)")
+for jogador, resultado in ranking_decrescente:
+    print(f"{jogador}: {resultado}")
+ranking_crescente = sorted(jogadores.items(), key=lambda item: item[1])
+print("ordem crescente (menor para o maior)")
+for jogador, resultado in ranking_crescente:
+    print(f"{jogador}: {resultado}")
+
+
+numero = input("digite um número inteiro")
+for caractere in numero:
+    if caractere.isdigit():
+        algarismo = int(caractere)
+        if algarismo % 2 == 0:
+            print(f"o algarismo {algarismo} é par")
+        else:
+            print(f"o algarismo {algarismo} é impar")
